@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BizChat/static/css/main.440364cc.css",
+    "main.js": "/BizChat/static/js/main.707d5e4f.js",
+    "index.html": "/BizChat/index.html",
+    "main.440364cc.css.map": "/BizChat/static/css/main.440364cc.css.map",
+    "main.707d5e4f.js.map": "/BizChat/static/js/main.707d5e4f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.440364cc.css",
+    "static/js/main.707d5e4f.js"
+  ]
+}
