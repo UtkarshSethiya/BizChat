@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.img {
+  border-radius: 50%;
+  height: 35px;
+
+  border: 2px solid black;
+}
+.navimg{
+  border-radius: 50%;
+  height: 55px;
+
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+  box-shadow: 0px 4px 4px rgba(61, 61, 61, 0.25);
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(247, 247, 247);
+  padding: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.msg {
+
+  display: flex;
+  padding: 10px;
+  margin: 20px;
+ border-radius: 1000px;
+  box-shadow: 0 0 10px rgb(164, 164, 164);
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.send {
+  background-color: #000d85;
+  color: white;
+
+  flex-direction: row-reverse;
+
+  text-align: end;
+  float: right;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(69, 69, 69);
+}
+.received {
+  border: 1px solid lightgray;
+  background-color: #FAFAFA;
+ 
+  float: left;
+}
+
+
+.sendMsg {
+
+
+}
+.msgs {
+
+ border: 1px solid rgb(218, 218, 218);
+ border-radius: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(226, 255, 255);
 }
+.input{
+  background-color: rgb(241, 241, 241);
+padding: 11px;
+  width: 90%;
+  border-radius: 8px;
+  outline: none;
+ border: 1px solid rgb(138, 138, 138);
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cont{
+  margin-top: 100px;
 }

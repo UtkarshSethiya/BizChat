@@ -1,0 +1,11 @@
+/*
+*/
+.sign{
+    background-color: rgb(204, 255, 255);
+    position: absolute;
+    top: 30%;
+    left: 35%;
+   text-align: center;
+   padding: 50px;
+
+}
