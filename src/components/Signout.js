@@ -5,7 +5,7 @@ import './signout.css'
 function Signout(){
 return(
  <div className='signout'>
-    <button className='btn ' onClick={()=>auth.signOut()}>SignOut</button>
+    <button className='btn ' onClick={()=>auth.signOut()}>End Session</button>
  </div>
 
 );

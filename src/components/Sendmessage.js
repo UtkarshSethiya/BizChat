@@ -5,6 +5,14 @@ import send from './images/send.png'
 import '../App.css'
 
 function Sendmessage({scroll}){
+
+  
+      
+
+
+
+
+    
 const [message,setmessage]=useState('')
 async function sendmessage(e){
 e.preventDefault()
@@ -19,7 +27,8 @@ await db.collection('BizChat').add({
     createdAt:firebase.firestore.FieldValue.serverTimestamp()
 })
 setmessage('')
-scroll.current.scrollIntoView({ behavior: 'smooth' })
+scroll.current.scrollIntoView({ behavior: 'auto' })
+
 }
 return(
     <div className='sendmessage'>
@@ -28,7 +37,7 @@ return(
             
             <div className='sendMsg' >
             <input className='input'  value={message} onChange={(e)=>setmessage(e.target.value)} placeholder='Write Something...' required></input>
-            <button className=' btn' type='submit'><img src={send}></img></button>
+            <button className='  btn1' type='submit'><img src={send}></img></button>
             </div>
         </form>
        

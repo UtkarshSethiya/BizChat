@@ -1,12 +1,13 @@
 .img {
   border-radius: 50%;
-  height: 35px;
+  height: 25px;
 
-  border: 2px solid black;
+  
 }
 .navimg{
   border-radius: 50%;
   height: 55px;
+  
 
   
 }
@@ -16,12 +17,12 @@
   display: flex;
   justify-content: space-between;
   background-color: rgb(247, 247, 247);
-  padding: 5px;
+  padding: px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 p {
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 600;
   margin-top: 20px;
   margin: 5px;
@@ -30,8 +31,8 @@ p {
 .msg {
 
   display: flex;
-  padding: 10px;
-  margin: 20px;
+  padding: 5px;
+  margin: 5px;
  border-radius: 1000px;
   box-shadow: 0 0 10px rgb(164, 164, 164);
   align-items: center;
@@ -49,7 +50,7 @@ p {
 body{
   margin: 0;
   padding: 0;
-  background-color: rgb(69, 69, 69);
+  background-color: rgb(255, 255, 255);
 }
 .received {
   border: 1px solid lightgray;
@@ -70,16 +71,29 @@ body{
   display: flex;
   flex-direction: column;
   background-color: rgb(226, 255, 255);
+
+}
+.cont2{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow-y: scroll;
 }
 .input{
   background-color: rgb(241, 241, 241);
-padding: 11px;
+padding: 14px;
   width: 90%;
-  border-radius: 8px;
+  border-radius: 16px;
   outline: none;
  border: 1px solid rgb(138, 138, 138);
 
 }
 .cont{
   margin-top: 100px;
+}
+
+@media screen and (max-width:780px){
+  .msgs{
+width: auto;
+  }
 }

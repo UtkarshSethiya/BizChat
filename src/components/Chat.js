@@ -5,7 +5,11 @@ import Sendmessage from './Sendmessage';
 import { auth, db } from '../firebase'
 import React, {useState,useEffect,useRef} from 'react'
 
-function Chat(){
+function Chat(props){
+
+    
+
+
 const scroll = useRef()
     const {uid,photoURL,displayName}=auth.currentUser
 const [msg,setmsg]=useState([])
@@ -25,32 +29,35 @@ console.log(msg)
        
 <div className='row cont'>
     <div className='col-3'></div>
-    <div className='col-6'>
+    <div className='col-md-6'>
        
     <div className=' msgs'>
        
 <div className='nav'>
-    <span><img className='navimg' src={photoURL}></img> {displayName}</span> 
+    <span className='guestname'>Welcome! {props.guest}</span> 
+    <span className='guestname'>General Chat </span>
     <span><Signout/></span>
 </div>
+<div className='cont2' >
 
-<div className='space'></div>
 
     {msg.map(({id,text,photoURL,displayName,uid})=>(
    <div  >
+       
     <div key={id}  className={`msg ${uid==auth.currentUser.uid ? 'send' : 'received'}`}  >
 
-    <img className='img' src={photoURL}></img>
+
     <p>{text}</p>
 
    
    
     </div>
-    </div>
     
-))}
+    </div>
+
+))}</div><div className='ref' ref={scroll}> </div>
 <Sendmessage scroll={scroll} />
-    <div ref={scroll}> </div>
+   
         </div>
 
 </div>
